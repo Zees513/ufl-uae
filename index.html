@@ -235,23 +235,28 @@
     }
 
     .card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
-}
-.card-title{
-  color: #001f3f;
-}
-.card-title i {
-  color: #001f3f;
-}
-.card-text {
-  color: #333;
-}
+      background-color: #ffffff;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .card-title {
+      color: white;
+    }
+
+    .card-title i {
+      color: white;
+    }
+
+    .card-text {
+      color: white;
+    }
+
     /* .services-offered {
       padding: 60px 20px;
     }
@@ -290,10 +295,10 @@
       color: var(--blue);
       position: relative;
       /* top: 15px; */
-    
 
 
-      
+
+
 
     /* Partner Logos */
     .partner-logos {
@@ -346,7 +351,7 @@
     .counter .plus {
       font-size: 2rem;
       font-weight: bold;
-      color: var(--blue);
+      color: #017DC6;
       margin-left: 2px;
     }
 
@@ -379,20 +384,20 @@
 
     .card-icon {
       font-size: 2.8rem;
-      color: #d90012;
+      color: #017DC6;
       margin-bottom: 15px;
     }
 
     .about-card h3 {
       font-size: 1.4rem;
       font-weight: 600;
-      color: #002a5c;
+      color: #017DC6;
       margin-bottom: 12px;
     }
 
     .about-card p {
       font-size: 1rem;
-      color: #475569;
+      color: black;
       line-height: 1.6;
     }
 
@@ -429,7 +434,7 @@
   <section id="home" class="hero" style="border-top: 7px solid #D51820;">
     <div class="carousel" id="carousel" data-fit="cover">
       <!-- Slide 1 -->
-      <div class="slide" >
+      <div class="slide">
         <div class="slide-media">
           <img src="./IMG/one.jfif" alt="Global Logistics — Sea" />
         </div>
@@ -438,7 +443,7 @@
           <h1 class="animate__animated animate__fadeInDown">Global Freight Forwarding — Sea, Air & Road</h1>
           <p>Reliable transit, clear tracking, and tailored solutions for your business.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="#services" style="text-align: center;">Explore Services</a>
+            <a class="btn btn-primary" href="#services" style="text-align: center;background-color: #017DC6;">Explore Services</a>
 
           </div>
         </div>
@@ -510,8 +515,8 @@
 
       <!-- Content -->
       <div style="flex:1; min-width:280px;">
-        <h2 style="color:var(--blue); font-size:2.5rem; margin-bottom:15px;">Why Choose UFL</h2>
-        <p style="color:#374151; font-size:1.15rem; margin-bottom:35px; max-width:600px;">
+        <h2 style="color:black; font-size:2.5rem; margin-bottom:15px;">Why Choose UFL</h2>
+        <p style="color:black; font-size:1.15rem; margin-bottom:35px; max-width:600px;">
           Combining local expertise with global reach, UFL provides secure, customizable, and trackable
           logistics services.
           We focus on minimizing transit times and costs while ensuring full compliance and customer satisfaction.
@@ -520,25 +525,25 @@
         <!-- Floating Cards -->
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px;">
           <div class="card"
-            style="background:var(--blue); color:white; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
+            style="background:#017DC6; color: black; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
             <h3 style="margin-bottom:8px;">Transparent Tracking</h3>
             <p style="font-size:0.95rem;">Real-time updates and single-point communication for every shipment.</p>
           </div>
 
           <div class="card"
-            style="background:var(--blue); color:white; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
+            style="background:#017DC6; color:black; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
             <h3 style="margin-bottom:8px;">Customs & Compliance</h3>
             <p style="font-size:0.95rem;">Experienced team handling documentation and regulatory requirements.</p>
           </div>
 
           <div class="card"
-            style="background:var(--blue); color:white; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
+            style="background:#017DC6; color:black; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
             <h3 style="margin-bottom:8px;">Fast Response</h3>
             <p style="font-size:0.95rem;">Dedicated account managers and rapid exception handling.</p>
           </div>
 
           <div class="card"
-            style="background:var(--blue); color:white; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
+            style="background:#017DC6; color:black; padding:20px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.15); transition:all 0.3s;">
             <h3 style="margin-bottom:8px;">Secure Delivery</h3>
             <p style="font-size:0.95rem;">Ensuring every shipment reaches safely with full insurance coverage.</p>
           </div>
@@ -548,123 +553,122 @@
   </section>
 
   <!-- Services (6 cards) -->
-  <section class="services-offered section-padding py-5" style="background-color: #001f3f;">
-  <div class="container">
-    <h2 class="section-title text-center text-white mb-5" style="font-size: 2.5rem;">
-      Our Services
-    </h2>
+  <section class="services-offered section-padding py-5" style="background-color: #017DC6;">
+    <div class="container">
+      <h2 class="section-title text-center text-white mb-5" style="font-size: 2.5rem;">
+        Our Services
+      </h2>
 
-    <div class="row g-4">
-      <!-- Service Card 1 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">
-              Ocean Freight <i class="fas fa-ship"></i>
-            </h5>
-            <p class="card-text">
-              Reliable FCL and LCL solutions connecting Pakistan to every major port globally.
-            </p>
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body" style="color: white;">
+              <h5 class="card-title fw-bold ">
+                Ocean Freight <i class="fas fa-ship"></i>
+              </h5>
+              <p class="card-text">
+                Reliable FCL and LCL solutions connecting Pakistan to every major port globally.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Service Card 2 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">
-              Air Freight <i class="fas fa-plane"></i>
-            </h5>
-            <p class="card-text">
-              Speed and reliability for time-critical shipments with flexible cargo options.
-            </p>
+        <!-- Service Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body"style="color: white;">
+              <h5 class="card-title fw-bold">
+                Air Freight <i class="fas fa-plane"></i>
+              </h5>
+              <p class="card-text">
+                Speed and reliability for time-critical shipments with flexible cargo options.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Service Card 3 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">
-              Road & Trucking <i class="fas fa-truck"></i>
-            </h5>
-            <p class="card-text">
-              Efficient inland transport, first-mile/last-mile delivery, and cross-border trucking.
-            </p>
+        <!-- Service Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body"style="color: white;">
+              <h5 class="card-title fw-bold ">
+                Road & Trucking <i class="fas fa-truck"></i>
+              </h5>
+              <p class="card-text">
+                Efficient inland transport, first-mile/last-mile delivery, and cross-border trucking.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Service Card 4 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">
-              Warehousing & 3PL <i class="fas fa-warehouse"></i>
-            </h5>
-            <p class="card-text">
-              Integrated supply chain management, storage, inventory, and distribution services.
-            </p>
+        <!-- Service Card 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body"style="color: white;">
+              <h5 class="card-title fw-bold">
+                Warehousing & 3PL <i class="fas fa-warehouse"></i>
+              </h5>
+              <p class="card-text">
+                Integrated supply chain management, storage, inventory, and distribution services.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Service Card 5 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">
-              Custom Clearance <i class="fas fa-passport"></i>
-            </h5>
-            <p class="card-text">
-              Expert handling of all import/export formalities for rapid border transit.
-            </p>
+        <!-- Service Card 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body"style="color: white;">
+              <h5 class="card-title fw-bold">
+                Custom Clearance <i class="fas fa-passport"></i>
+              </h5>
+              <p class="card-text">
+                Expert handling of all import/export formalities for rapid border transit.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Service Card 6 -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card h-100 text-center border-0 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold ">
-              Project & Heavy Lift <i class="fas fa-cogs"></i>
-            </h5>
-            <p class="card-text">
-              Specialized handling for oversized, heavy, and complex industrial projects.
-            </p>
+        <!-- Service Card 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 text-center border-0 shadow-sm" style="background-color: black;">
+            <div class="card-body"style="color: white;">
+              <h5 class="card-title fw-bold ">
+                Project & Heavy Lift <i class="fas fa-cogs"></i>
+              </h5>
+              <p class="card-text">
+                Specialized handling for oversized, heavy, and complex industrial projects.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- Partners  -->
-  <section id="partners" class="partners container">
-    <h2 style="text-align:center;color:var(--blue);font-size: 2.5rem;">Our Memberships</h2>
-    <p style="text-align:center;color:#475569;margin-bottom:18px">
+  <section id="partners" class="partners container" style="background-color: #017DC6;">
+    <h2 style="text-align:center;color:black;font-size: 2.5rem;">Our Memberships</h2>
+    <p style="text-align:center;color:black;margin-bottom:18px">
       We work with international carriers and trusted local partners to deliver end-to-end solutions.
     </p>
 
-    <div class="partner-logos">
-      <img src="./IMG/1 logo.jfif" alt="partner4">
-      <img src="./IMG/fiata-social.png" alt="partner2" style="position: relative;left: 40px;">
-      <img src="./IMG/white4.jfif" alt="partner3">
-      <img src="./IMG/white3.jfif" alt="partner5">
-      <img src="./IMG/white2.jfif" alt="partner1" style="position: relative;right: 15px;">
-      <img src="./IMG/h3.jpeg" alt="partner6">
+    <div class="partner-logos" style="position: relative;top: 30px;">
+      <img src="./IMG/uae-mem.png" alt="partner4">
+      <img src="./IMG/ufl uae membr 1.svg" alt="partner2">
+      <img src="./IMG/ufl-mem-2.png" alt="partner3" style="height: 120px;position: relative;bottom: 30px;">
+      <img src="./IMG/ufl uae membr.svg" alt="partner5">
+
     </div>
   </section>
   <!-- counters -->
   <section id="counters" class="counters-section container">
-    <h1 style="color:#002a5c ; text-align: center;align-items: center;font-size: 2.5rem;">Our Achievements</h1>
+    <h1 style="color:black ; text-align: center;align-items: center;font-size: 2.5rem;">Our Achievements</h1>
     <div class="counters">
       <div class="counter">
         <div class="num-wrapper">
-          <div class="num" data-target="100" style="color: red;">0</div>
-          <span class="plus" style="color: red;">+</span>
+          <div class="num" data-target="100" style="color: #017DC6;">0</div>
+          <span class="plus" style="color: #017DC6;">+</span>
         </div>
         <div class="lbl" style="font-weight: bold;">Global Partners</div>
       </div>
@@ -672,16 +676,16 @@
 
       <div class="counter">
         <div class="num-wrapper">
-          <div class="num" data-target="10000" style="color: red;">0</div>
-          <span class="plus" style="color: red;">+</span>
+          <div class="num" data-target="10000" style="color: #017DC6;">0</div>
+          <span class="plus" style="color: #017DC6;">+</span>
         </div>
         <div class="lbl" style="font-weight: bold;">Shipments fulfilled</div>
       </div>
 
       <div class="counter">
         <div class="num-wrapper">
-          <div class="num" data-target="40" style="color: red;">0</div>
-          <span class="plus" style="color: red;">+</span>
+          <div class="num" data-target="40" style="color: #017DC6;">0</div>
+          <span class="plus" style="color: #017DC6;">+</span>
         </div>
         <div class="lbl" style="font-weight: bold;">Countries Served</div>
       </div>
@@ -689,8 +693,8 @@
 
       <div class="counter">
         <div class="num-wrapper">
-          <div class="num" data-target="150" style="color: red;">0</div>
-          <span class="plus" style="color: red;">+</span>
+          <div class="num" data-target="150" style="color: #017DC6 ;">0</div>
+          <span class="plus" style="color: #017DC6;">+</span>
         </div>
         <div class="lbl" style="font-weight: bold;">Satisfied Clients</div>
       </div>
@@ -699,7 +703,7 @@
   </section>
 
   <section class="about-section">
-    <h2 style="color: #001f3f;font-size: 2.5rem;text-align: center;position: relative;bottom: 20px;">Commitment to
+    <h2 style="color: black;font-size: 2.5rem;text-align: center;position: relative;bottom: 20px;">Commitment to
       Excellence</h2>
     <div class="about-cards">
       <!-- Vision -->
