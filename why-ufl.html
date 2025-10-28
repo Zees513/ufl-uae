@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFL | About Us</title>
+  <link rel="icon" type="image/png" href="./IMG/ufl logo png.png">
+     
+
+    <!-- ✅ Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        :root {
+            --ufl-blue: #004488;
+            /* Primary Blue (Trust/Professional) */
+            --ufl-dark-blue: #002e5b;
+            --ufl-green: #00a651;
+            /* Green Accent (Sustainability/Growth) */
+            --color-light: #f4f6f8;
+            --color-white: #ffffff;
+            --color-dark: #212529;
+            --font-main: 'Poppins', sans-serif;
+            --spacing-large: 4rem;
+            --spacing-medium: 2.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: var(--color-dark);
+            background-color: var(--color-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            /* padding: 0 1.5rem; */
+        }
+
+        /* --- Global Typography & Buttons --- */
+        h1,
+        h2,
+        .mine {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: var(--spacing-medium);
+        }
+
+        .mine {
+            font-size: 1.75rem;
+        }
+
+        .section-padding {
+            padding: var(--spacing-large) 0;
+        }
+
+        .bg-light {
+            background-color: var(--color-light);
+        }
+
+        .bg-primary {
+            background-color: var(--ufl-blue);
+            color: var(--color-white);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            margin: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: var(--ufl-green);
+            color: var(--color-white);
+            border-color: var(--ufl-green);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--ufl-blue);
+            border-color: var(--ufl-blue);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--ufl-blue);
+            border-color: var(--ufl-blue);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--ufl-blue);
+            color: var(--color-white);
+        }
+
+    
+
+        /* --- 1. HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./IMG/move.jfif') center center/cover no-repeat;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 1.5rem;
+            position: relative;
+            top: 15px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* --- 2. STATS AT A GLANCE (Animated Counter) --- */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 0 0 var(--spacing-large) 0;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+            background-color: var(--ufl-blue);
+            color: var(--color-white);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            opacity: 0.8;
+        }
+
+        /* --- 3. COMPANY EVOLUTION/NARRATIVE --- */
+        .evolution-story {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            text-align: left;
+            margin-top: var(--spacing-medium);
+        }
+
+        .evolution-story h2 {
+            text-align: left;
+        }
+
+        .evolution-text {
+            flex: 1;
+        }
+
+        .evolution-image-placeholder {
+            flex: 1;
+            min-height: 350px;
+            background: url('https://images.unsplash.com/photo-1628178651842-8c9033333333?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center/cover no-repeat;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .evolution-text ul {
+            list-style: none;
+            margin-top: 1rem;
+            padding-left: 0;
+        }
+
+        .evolution-text ul li {
+            margin-bottom: 0.5rem;
+            color: var(--ufl-blue);
+            font-weight: 600;
+        }
+
+        .evolution-text ul li i {
+            margin-right: 0.5rem;
+            color: var(--ufl-green);
+        }
+
+        /* --- 4. CORE VALUES (Themed Sections) --- */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: var(--spacing-medium);
+        }
+
+        .value-card {
+            padding: 2rem;
+            border-radius: 8px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .value-card i {
+            font-size: 3rem;
+            color: var(--ufl-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .value-card h3 {
+            color: var(--ufl-blue);
+        }
+
+        /* --- 5. TEAM STORIES / LEADERSHIP --- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: var(--spacing-medium);
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-photo-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ceo-photo {
+            background-image: url('https://images.unsplash.com/photo-1560250097-c7940e703350?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+
+        .founder-photo {
+            background-image: url('https://images.unsplash.com/photo-1507003211169-0a8165b45284?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+
+        .leader-quote {
+            font-style: italic;
+            color: #555;
+            margin-top: 0.5rem;
+            border-left: 3px solid var(--ufl-green);
+            padding-left: 1rem;
+        }
+
+        /* --- 6. GIVING BACK / PARTNERSHIPS --- */
+        .giving-back-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .cares-text {
+            flex: 1;
+        }
+
+        .cares-image-placeholder {
+            flex: 1;
+            min-height: 350px;
+    
+            border-radius: 8px;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2rem;
+            margin-top: var(--spacing-medium);
+            align-items: center;
+        }
+
+        .partner-logo {
+            height: 100px;
+            /* background-color: #fff;
+            border: 1px solid #ddd; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            opacity: 1;
+        }
+
+        .partner-logo img {
+            max-width: 80%;
+            max-height: 80%;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+             
+        }
+
+        .partner-logo:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+        /* --- 7. FINAL CTAs / FOOTER --- */
+        .final-cta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: var(--spacing-medium);
+        }
+
+        .cta-card {
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 5px solid var(--ufl-green);
+            background-color: var(--color-white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .cta-card i {
+            font-size: 2rem;
+            color: var(--ufl-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- Animations (Fade-in on scroll) --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Media Queries (Responsiveness) --- */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .evolution-story,
+            .giving-back-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .evolution-story h2 {
+                text-align: center;
+            }
+
+            .evolution-image-placeholder,
+            .cares-image-placeholder {
+                min-height: 300px;
+            }
+
+            .stats-grid,
+            .values-grid,
+            .team-grid,
+            .final-cta-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .partners-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                min-height: 50vh;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid,
+            .values-grid,
+            .team-grid,
+            .final-cta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .partners-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-content>* {
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+/* ✅ Topbar — fixed, centered, and responsive */
+/* #header .topbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 4px 18px !important;
+  box-sizing: border-box !important;
+  background: #002a5c !important;
+  color: #fff !important;
+  z-index: 1000 !important;
+} */
+
+/* ✅ Header (below topbar) */
+/* #header .header {
+  margin-top: 32px !important;
+  position: fixed !important;
+  width: 100% !important;
+  left: 0 !important;
+  z-index: 1100 !important;
+  background: #fff !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07) !important;
+} */
+
+/* ✅ Mobile adjustments (no overflow, full centering) */
+/* @media (max-width: 600px) {
+  #header .topbar {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 6px 10px !important;
+    width: 100vw !important;         /* exact viewport width */
+    /* overflow-x: hidden !important;   /* remove right scroll */
+  /* } */ 
+
+  /* #header .topbar .contact-info,
+  #header .topbar .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    gap: 8px !important;
+    position: static !important;
+    left: 0 !important;
+    right: 0 !important;
+  } */
+
+  /* #header .topbar .social-icons a {
+    margin: 4px !important;
+  }
+} */
+
+@media (max-width: 600px) {
+    #header .topbar {
+        /* text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto; */
+        width: 80%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <h1>Empowering Supply Chain for a Connected World.</h1>
+                <p>From local roots to global reach, we are the trusted partner building smarter, more resilient, and
+                    sustainable logistics solutions for everyone.</p>
+                <div class="cta-group"> <a href="#purpose" class="btn btn-primary"
+                        style="background-color:#002e5b ;border:1px solid red;">Learn About Us</a> <a
+                        href="./contact.html" class="btn btn-secondary">Get a Quote</a> </div>
+            </div>
+        </section>
+        <section class="stats-at-glance section-padding bg-light" id="stats">
+            <div class="container fade-in">
+                <h2 class="text-center">UFL At a Glance</h2>
+                <div class="stats-grid">
+                    <div class="stat-item"> <span class="stat-number" data-target="100">0</span>+ <p class="stat-label">
+                            Global Partners</p>
+                    </div>
+                    <div class="stat-item"> <span class="stat-number" data-target="10000">0</span>+ <p
+                            class="stat-label">Shipments Fulfilled</p>
+                    </div>
+                    <div class="stat-item"> <span class="stat-number" data-target="40">0</span>+ <p class="stat-label">
+                            Countries Served</p>
+                    </div>
+                    <div class="stat-item"> <span class="stat-number" data-target="150">0</span>+ <p
+                            class="stat-label">Satisfied Clients</p>
+                    </div>
+                </div>
+                <div class="text-center"><a href="#purpose" class="btn btn-secondary">Our Full Story</a></div>
+            </div>
+        </section>
+        <section class="evolution section-padding" id="purpose">
+            <div class="container evolution-story fade-in">
+                <div class="evolution-text">
+                    <h2>Our World Evolves Around You.</h2>
+                    <p>UFL was founded on the principle that local expertise combined with global vision could
+                        redefine logistics. We recognized the need for secure, customizable, and traceable supply chains
+                        in a rapidly changing market.</p>
+                    <p>Today, our focus has shifted from simply moving goods to creating **smarter supply chains**. We
+                        continuously invest in digital innovation, real-time transparent tracking, and robust compliance
+                        systems to ensure your cargo moves smoothly, reliably, and sustainably—every time.</p>
+                    <p>This commitment to evolution is why clients choose UFL:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Transparent Real-time Tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Seamless Customs & Compliance</li>
+                        <li><i class="fas fa-check-circle"></i> Rapid, Fast Response Support</li>
+                        <li><i class="fas fa-check-circle"></i> End-to-End Secure Delivery</li>
+                    </ul>
+                </div>
+                <div class="evolution-image-placeholder"><img src="./IMG/global.jfif" alt="" height="350px" style="border-radius: 10px;"></div>
+            </div>
+        </section>
+        <section class="values section-padding bg-light">
+            <div class="container fade-in">
+                <h2 class="text-center">Our Core Pillars: Values in Action</h2>
+                <div class="values-grid">
+                    <div class="value-card"> <i class="fas fa-seedling"></i>
+                        <h3 class="mine">Sustainability & Impact</h3>
+                        <p>We believe in growth that doesn't compromise the planet. Our operations prioritize
+                            eco-friendly practices, including route optimization for lower emissions and partnering with
+                            green carriers.</p>
+                    </div>
+                    <div class="value-card"> <i class="fas fa-chart-line"></i>
+                        <h3 class="mine">Efficiency & Intelligence</h3>
+                        <p>We minimize transit times and costs through the application of digital tools and predictive
+                            analytics, turning complex supply chains into smooth, optimized user experiences.</p>
+                    </div>
+                    <div class="value-card"> <i class="fas fa-hands-helping"></i>
+                        <h3 class="mine">Partnership & Trust</h3>
+                        <p>Our foundation is built on long-term relationships. We act as an extension of your team,
+                            providing customer-first strategies, integrity, and absolute accountability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="giving-back section-padding bg-white">
+            <div class="container fade-in">
+                <h2 class="text-center">UFL Cares: Giving Back to Pakistan</h2>
+                <div class="giving-back-content">
+                    <div class="cares-text">
+                        <p>Our success is tied directly to the community we serve. **UFL Cares** is our commitment to
+                            social and environmental responsibility, focusing our efforts on local education and
+                            sustainable development initiatives.</p>
+                        <p>From providing pro-bono logistics for local charities to implementing a community-first
+                            hiring strategy, we are invested in fostering economic growth and environmental stewardship
+                            right here in Pakistan.</p> <a href="#impact" class="btn btn-secondary"
+                            style="margin-left: 0;">View Impact Report <i class="fas fa-file-alt"></i></a>
+                    </div>
+                    <div class="cares-image-placeholder"><img src="./IMG/luggage.jfif" alt="" height="350px" style="border-radius: 10px;" ></div>
+                </div>
+                <h3 class="text-center mine" style="margin-top: 4rem;font-size: 2.3rem;">Proud Memberships & Global Partners</h3>
+                <div class="partners-grid fade-in">
+                    <div class="partner-logo"><img src="./IMG/1 logo.jfif" alt="FIATA Logo">
+                    </div>
+                    <div class="partner-logo"><img src="./IMG/fiata-social.png" alt="IATA Logo">
+                    </div>
+                    <div class="partner-logo"><img src="./IMG/white4.jfif" alt="WCA Logo">
+                    </div>
+                    <div class="partner-logo"><img src="./IMG/white3.jfif"
+                            alt="Partner P Logo"></div>
+                    <div class="partner-logo"><img src="./IMG/white2.jfif"
+                            alt="Global Network Logo"></div>
+                    <div class="partner-logo"><img src="./IMG/h3.jpeg"
+                            alt="Major Carrier Logo"></div>
+                </div>
+            </div>
+        </section>
+        <section class="final-ctas section-padding">
+            <div class="container fade-in">
+                <h2 class="text-center">Take the Next Step with UFL</h2>
+                <div class="final-cta-grid">
+                    <div class="cta-card"> <i class="fas fa-briefcase"></i>
+                        <h3 class="mine">Start Your UFL Story</h3>
+                        <p>Explore career opportunities and join a team dedicated to innovation and excellence in
+                            logistics.</p> <a href="./career.html" class="btn btn-secondary">View Careers</a>
+                    </div>
+                    <div class="cta-card"> <i class="fas fa-newspaper"></i>
+                        <h3 class="mine">Company News & Media</h3>
+                        <p>Stay updated on our latest projects, press releases, and industry insights.</p> <a
+                            href="./news.html" class="btn btn-secondary">Read News</a>
+                    </div>
+                    <div class="cta-card"> <i class="fas fa-handshake"></i>
+                        <h3 class="mine">Sponsorships & Events</h3>
+                        <p>Learn how UFL supports local sports, community events, and partnerships.</p> <a
+                            href="./contact.html#sponsorship" class="btn btn-secondary">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> <!-- ✅ Your full page HTML content (unchanged) -->
+    </main>
+
+    <div id="footer"></div>
+<script>
+/*
+  Robust hamburger handler for dynamically-injected header
+  - Waits for #header to be present
+  - Searches for common nav toggles and nav containers inside header
+  - Toggles "active" class and also applies fallback inline display if needed
+  - Works even if header.html uses different selectors (.nav-links or #navLinks)
+*/
+document.addEventListener('DOMContentLoaded', () => {
+
+  // waitForSelector: resolves when selector appears under parent (document or element)
+  function waitForSelector(selector, parent = document, timeout = 5000) {
+    return new Promise((resolve, reject) => {
+      try {
+        const found = parent.querySelector(selector);
+        if (found) return resolve(found);
+
+        const observerTarget = parent === document ? document.documentElement : parent;
+        const observer = new MutationObserver(() => {
+          const el = parent.querySelector(selector);
+          if (el) {
+            observer.disconnect();
+            return resolve(el);
+          }
+        });
+        observer.observe(observerTarget, { childList: true, subtree: true });
+
+        setTimeout(() => {
+          observer.disconnect();
+          reject(new Error('timeout'));
+        }, timeout);
+      } catch (err) {
+        reject(err);
+      }
+    });
+  }
+
+  // Wait for the header container to be in DOM (injected by loadPart)
+  waitForSelector('#header', document, 5000).then(headerEl => {
+    // Now wait (short) for nav-toggle or nav to appear inside header
+    const toggleSelectors = ['.nav-toggle', '[data-nav-toggle]', '#hamburger', '.hamburger'];
+    const navSelectors = ['#navLinks', '.nav-links', 'nav ul', 'nav .nav-links', 'ul.nav-links'];
+
+    // Helper to find first existing element among many selectors
+    function findOne(parent, selectors) {
+      for (const s of selectors) {
+        const el = parent.querySelector(s);
+        if (el) return el;
+      }
+      return null;
+    }
+
+    // Try to find elements (give them up to 5s)
+    Promise.all([
+      waitForSelector(toggleSelectors.join(','), headerEl, 5000).catch(() => null),
+      waitForSelector(navSelectors.join(','), headerEl, 5000).catch(() => null)
+    ]).then(([maybeToggle, maybeNav]) => {
+
+      // If both found, attach direct handler(s)
+      if (maybeToggle && maybeNav) {
+        // there might be multiple toggles; attach to all
+        const toggles = headerEl.querySelectorAll(toggleSelectors.join(','));
+        toggles.forEach(t => {
+          t.setAttribute('aria-expanded', 'false');
+          t.addEventListener('click', (e) => {
+            e.preventDefault();
+            // toggle class
+            maybeNav.classList.toggle('active');
+            const expanded = maybeNav.classList.contains('active');
+            toggles.forEach(tt => tt.setAttribute('aria-expanded', expanded ? 'true' : 'false'));
+
+            // Fallback: if CSS still hides it (computed display none), set inline style
+            const cs = window.getComputedStyle(maybeNav);
+            if (expanded && cs.display === 'none') {
+              // try to guess a good display
+              const prefer = (maybeNav.tagName.toLowerCase() === 'ul' || maybeNav.classList.contains('nav-links')) ? 'flex' : 'block';
+              maybeNav.style.display = prefer;
+            } else if (!expanded) {
+              maybeNav.style.display = '';
+            }
+          });
+        });
+        return;
+      }
+
+      // If not both found, add a delegated click listener that will toggle first-found nav when hamburger clicked
+      document.addEventListener('click', (ev) => {
+        const clickedToggle = ev.target.closest(toggleSelectors.join(','));
+        if (!clickedToggle) return;
+
+        // find nav now (attempt multiple places)
+        let nav = findOne(headerEl, navSelectors) || document.querySelector(navSelectors.join(','));
+        if (!nav) {
+          // nothing found — nothing to toggle
+          return;
+        }
+
+        nav.classList.toggle('active');
+        const expanded = nav.classList.contains('active');
+        clickedToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+
+        // Fallback inline display if CSS hides it
+        const cs = window.getComputedStyle(nav);
+        if (expanded && cs.display === 'none') {
+          const prefer = (nav.tagName.toLowerCase() === 'ul' || nav.classList.contains('nav-links')) ? 'flex' : 'block';
+          nav.style.display = prefer;
+        } else if (!expanded) {
+          nav.style.display = '';
+        }
+      });
+    });
+
+  }).catch(() => {
+    // header didn't appear in time — still attach delegated click so it will work when header appears later
+    document.addEventListener('click', (ev) => {
+      const clickedToggle = ev.target.closest('.nav-toggle, [data-nav-toggle], #hamburger, .hamburger');
+      if (!clickedToggle) return;
+      const nav = document.querySelector('#navLinks, .nav-links, nav ul, ul.nav-links');
+      if (!nav) return;
+      nav.classList.toggle('active');
+      const expanded = nav.classList.contains('active');
+      clickedToggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      const cs = window.getComputedStyle(nav);
+      if (expanded && cs.display === 'none') {
+        nav.style.display = (nav.tagName.toLowerCase() === 'ul' || nav.classList.contains('nav-links')) ? 'flex' : 'block';
+      } else if (!expanded) {
+        nav.style.display = '';
+      }
+    });
+  });
+
+});
+</script>
+
+<script>
+async function loadPart(id, file) {
+    try {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error(file + " not found");
+        const html = await response.text();
+
+        const container = document.getElementById(id);
+        // 🩹 Fix: prevent nested <header> or <footer> causing misalignment
+        if ((id === "header" || id === "footer") && html.trim().startsWith("<" + id)) {
+            // Create temp div, extract innerHTML of nested header/footer
+            const temp = document.createElement("div");
+            temp.innerHTML = html.trim();
+            const inner = temp.querySelector(id);
+            container.innerHTML = inner ? inner.innerHTML : html;
+        } else {
+            container.innerHTML = html;
+        }
+
+    } catch (err) {
+        console.error("Error loading " + file, err);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadPart("header", "header.html");
+    loadPart("footer", "footer.html");
+
+    document.addEventListener("click", e => {
+        if (e.target.classList.contains("nav-toggle")) {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    });
+
+    const faders = document.querySelectorAll('.fade-in');
+    const metricsSection = document.getElementById('stats');
+    const metrics = document.querySelectorAll('.stat-number');
+    let metricsAnimated = false;
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                if (entry.target.id === 'stats' && !metricsAnimated) {
+                    animateMetrics();
+                    metricsAnimated = true;
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => appearOnScroll.observe(fader));
+    if (metricsSection) appearOnScroll.observe(metricsSection);
+
+    function animateMetrics() {
+        metrics.forEach(metric => {
+            const target = +metric.getAttribute('data-target');
+            let current = 0;
+            const increment = target / 150;
+            const updateCount = () => {
+                if (current < target) {
+                    current += increment;
+                    metric.innerText = Math.ceil(current).toLocaleString();
+                    requestAnimationFrame(updateCount);
+                } else {
+                    metric.innerText = target.toLocaleString();
+                }
+            };
+            updateCount();
+        });
+    }
+});
+</script>
+
+</body>
+
+</html>

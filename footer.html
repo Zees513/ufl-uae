@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFL Footer</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    .ufl-footer {
+      position: relative;
+      background: linear-gradient(135deg, #001f3f 50%, #004080 50%);
+      color: #fff;
+      padding: 50px 20px;
+      overflow: hidden;
+    }
+
+    .ufl-footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-135deg, #001f3f 50%, transparent 50%);
+      opacity: 0.1;
+    }
+
+    .ufl-footer-content {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .ufl-logo img {
+      max-width: 200px;
+      height: auto;
+      display: block;
+    }
+
+    .ufl-address {
+      color: #ddd;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .ufl-address p {
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .ufl-address i {
+      margin-right: 30px;
+      color: #1e90ff;
+      font-size: 16px;
+      width: 20px;
+    }
+
+    .ufl-title {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1e90ff;
+      display: inline-block;
+    }
+
+    .ufl-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ufl-footer ul li {
+      margin: 8px 0;
+    }
+
+    .ufl-footer ul li a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .ufl-footer ul li a:hover {
+      color: #1e90ff;
+    }
+
+    .haa a {
+      display: inline-block;
+      margin: 0 8px;
+      font-size: 22px;
+      color: #fff;
+      padding: 5px;
+      border-radius: 50%;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .haa a:hover {
+      background: #1e90ff;
+      color: #fff;
+    }
+
+    .ufl-bottom {
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #5f5c5c;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .ufl-bottom p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* ✅ Mobile Responsive Fix */
+    @media (max-width: 992px) {
+      .ufl-col {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .ufl-address p{
+      margin-left: 40px;
+      }
+             .ufl-address i{
+              position: relative;
+              left: 190px;
+              margin-left: 40px;
+             }
+      .ufl-logo img {
+        margin: 0 auto 10px;
+      }
+
+      .ufl-tagline {
+        position: relative !important;
+        display: block;
+      }
+
+      .haa {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer class="ufl-footer">
+    <div class="container ufl-footer-content">
+      <div class="row justify-content-center text-center text-lg-start">
+
+        <!-- Logo -->
+        <div class="col-lg-3 col-md-6 col-sm-12 ufl-col ufl-logo mb-4 mb-lg-0">
+          <img src="./IMG/ufl logo png.png" height="300px" style="position: relative; bottom: 70px;" alt="Company Logo">
+          <p class="ufl-tagline" style="position: relative; bottom: 120px; left: 5px; color: rgb(141, 139, 139); font-weight: bold;">
+            Don't Worry, We have Solutions!
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 col-sm-12 ufl-col mb-4 mb-lg-0" style="position: relative; left: 480px; bottom: 50px;">
+          <h3 class="ufl-title" style="position: relative; top: 15px;">Quick Links</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./why-ufl.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-lg-4 col-md-6 col-sm-12 ufl-col ufl-address mb-4 mb-lg-0" style="position: relative; left: 350px; bottom: 50px;">
+          <h3 class="ufl-title" style="position: relative; top: 15px;">Address</h3>
+          <p>UFL PAKISTAN SMC PVT LTD <br>
+            SUITE 1615, 16TH FLOOR,<br> MUHAMMADI TRADE TOWER,<br>
+            SHAHRAH-E-LIAQUAT, NEW CHALLI,<br> KARACHI-PAKISTAN
+          </p>
+          <p style="position: relative;right: 25px;"><i class="fas fa-phone" style="position: relative;left: 25px;"></i> +92-21-32371057</p>
+          <p style="position: relative;right: 25px;"><i class="fas fa-envelope" style="position: relative;left: 25px;"></i> query@uflpk.com</p>
+        </div>
+
+        <!-- Social -->
+        <div class="col-lg-2 col-md-6 col-sm-12 ufl-col text-center text-lg-start" style="position: relative; top: 200px; right: 90px;">
+          <h3 class="ufl-title" style="position: relative; top: 15px;">Follow Us</h3>
+          <div class="haa">
+            <a href="https://www.facebook.com/uflpk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/86447862/admin/dashboard/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/uflpk_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:query@uflpk.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="ufl-bottom">
+    <p>© 2025 UFL Pakistan. All Rights Reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

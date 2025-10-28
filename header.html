@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFL Header</title>
+
+  <!-- ✅ Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --blue: #002a5c;
+      --white: #fff;
+      --muted: #f4f4f4;
+      --container: 1200px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 40px;
+      /* space for fixed topbar + header */
+    }
+
+    /* 🔹 Topbar */
+    .topbar {
+      background: #002a5c;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 18px;
+      font-size: 0.9rem;
+      line-height: 1.1;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .topbar .contact-info {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .topbar .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .topbar i {
+      font-size: 0.85rem;
+    }
+
+    .topbar .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      /* ✅ Ensures all 4 icons stay visible */
+      justify-content: flex-end;
+      gap: 8px;
+      position: relative;
+      right: 30px;
+    }
+
+    .topbar .social-icons a {
+      font-size: 0.95rem;
+      transition: 0.3s;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .topbar .social-icons a:hover {
+      color: #ff4b5c;
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+        font-size: 0.8rem;
+      }
+
+      .topbar .contact-info {
+        justify-content: center;
+      }
+
+      .topbar .social-icons {
+        position: relative;
+        left: 10px;
+      }
+
+      .topbar .social-icons a {
+        margin: 4px;
+      }
+    }
+
+    /* 🔹 Header */
+    .header {
+      background: var(--white);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      padding: 10px 18px;
+      margin-top: 20px;
+    }
+
+    .nav {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      height: 60px;
+    }
+
+    .brand img {
+      position: relative;
+      top: 0;
+      max-height: 80px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: var(--blue);
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      background: var(--muted);
+      color: var(--blue);
+    }
+
+    .cta {
+      background: #d51820;
+      color: var(--white);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--blue);
+      margin-right: 25px;
+      /* ✅ Moved a bit left */
+    }
+
+    /* ✅ Responsive menu */
+    @media (max-width: 900px) {
+      .header {
+        position: relative;
+        z-index: 10;
+        /* margin-top: 1px; */
+        /* Adjust this to your topbar height */
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background: var(--white);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border-radius: 6px;
+      }
+
+      /* 🩵 Make sure header appears below topbar properly */
+
+
+
+      .hamburger {
+        display: block;
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔹 Topbar -->
+  <!-- ✅ CLEAN VERSION: header.html -->
+
+<!-- 🔹 Topbar -->
+<div class="topbar">
+  <div class="contact-info">
+    <span><i class="fa-solid fa-phone"></i> +92-21-32371057</span>
+    <span><i class="fa-solid fa-envelope"></i> query@uflpk.com</span>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/uflpk"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/uflpk_official/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/86447862/"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:query@uflpk.com"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+</div>
+
+<!-- 🔹 Main Header -->
+<header class="header">
+  <div class="nav">
+    <div class="brand">
+      <a href="./index.html"><img src="./IMG/apna.jpeg" alt="UFL Pakistan"></a>
+      
+    </div>
+
+    <nav class="nav-links" aria-label="Main Navigation">
+      <a href="./index.html">Home</a>
+      <a href="./why-ufl.html">About Us</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./career.html">Career</a>
+      <a class="cta" href="./contact.html">Request Quote</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMobile()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+</header>
+
+<script>
+function toggleMobile() {
+  document.querySelector('.nav-links').classList.toggle('show');
+}
+</script>
+
+
+</body>
+
+</html>
