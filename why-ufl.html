@@ -305,42 +305,25 @@
             border-radius: 8px;
         }
 
-        .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 2rem;
-            margin-top: var(--spacing-medium);
-            align-items: center;
-        }
-
-        .partner-logo {
-            height: 100px;
-            /* background-color: #fff;
-            border: 1px solid #ddd; */
+        .partner-logos {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
-            border-radius: 4px;
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
+            gap: 25px;
         }
 
-        .partner-logo:hover {
-            opacity: 1;
+        .partner-logos img {
+            height: 70px;
+            /* logo size bada */
+            object-fit: contain;
+            transition: transform 0.3s;
+            position: relative;
+            bottom: 30px;
         }
 
-        .partner-logo img {
-            max-width: 80%;
-            max-height: 80%;
-            /* filter: grayscale(100%); */
-            transition: filter 0.3s ease;
-
+        .partner-logos img:hover {
+            transform: scale(1.1);
         }
-
-         .partner-logo:hover img {
-             filter: grayscale(0%); 
-             transform: scale(1.1); 
-        } 
 
         /* --- 7. FINAL CTAs / FOOTER --- */
         .final-cta-grid {
@@ -410,9 +393,9 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .partners-grid {
+            /* .partners-grid {
                 grid-template-columns: repeat(3, 1fr);
-            }
+            } */
 
         }
 
@@ -609,7 +592,8 @@
                 <h2 class="text-center">UFL Cares: Giving Back to UAE</h2>
                 <div class="giving-back-content">
                     <div class="cares-text">
-                        <p>Our success is tied directly to the community we serve. **<b>UFL</b> Cares** is our commitment to
+                        <p>Our success is tied directly to the community we serve. **<b>UFL</b> Cares** is our
+                            commitment to
                             social and environmental responsibility, focusing our efforts on local education and
                             sustainable development initiatives.</p>
                         <p>From providing pro-bono logistics for local charities to implementing a community-first
@@ -620,19 +604,21 @@
                     <div class="cares-image-placeholder"><img src="./IMG/luggage.jfif" alt="" height="350px"
                             style="border-radius: 10px;"></div>
                 </div>
-                <h3 class="text-center mine" style="margin-top: 4rem;font-size: 2.3rem;background-color: #017DC6;">Proud
-                    Memberships & Global Partners</h3>
-                <div class="partners-grid fade-in" style="margin: 0 auto;background-color: #017DC6;">
-                    <div class="partner-logo"><img src="./IMG/uae-mem.png" alt="FIATA Logo" style="position: relative;left: 200px;">
-                    </div>
-                    <div class="partner-logo"><img src="./IMG/ufl uae membr 1.svg" alt="IATA Logo"style="position: relative;left: 200px;">
-                    </div>
-                    <div class="partner-logo"><img src="./IMG/ufl-mem-2.png" alt="WCA Logo"style="position: relative;left: 200px;">
-                    </div>
-                    <div class="partner-logo"><img src="./IMG/ufl uae membr.svg" alt="Partner P Logo"style="position: relative;left: 200px;"></div>
-                </div>
-            </div>
         </section>
+        <section id="partners" class="partners container" style="background-color: #017DC6;">
+    <h2 style="text-align:center;color:black;font-size: 2.5rem;">Our Memberships</h2>
+    <p style="text-align:center;color:black;margin-bottom:18px">
+      We work with international carriers and trusted local partners to deliver end-to-end solutions.
+    </p>
+
+    <div class="partner-logos" style="position: relative;top: 30px;">
+      <img src="./IMG/uae-mem.png" alt="partner4" height="50px">
+      <img src="./IMG/ufl uae membr 1.svg" alt="partner2">
+      <img src="./IMG/ufl-mem-2.png" alt="partner3" style="height: 120px;position: relative;bottom: 70px;">
+      <img src="./IMG/ufl uae membr.svg" alt="partner5">
+
+    </div>
+  </section>
         <section class="final-ctas section-padding">
             <div class="container fade-in">
                 <h2 class="text-center">Take the Next Step with UFL</h2>
